@@ -1,0 +1,44 @@
+<!doctype html>
+<title> Javascript</title>
+<head>
+
+
+</head>
+
+<body>
+
+<font style="font size:30px;color:black">
+<form id="f1">
+Name<input name="name" type="text">
+</br>
+Password:<input name="pass" type="password" >
+</br>
+</form>
+
+<button onclick="fd()" > Submit</button>
+
+<script>
+function fd(){
+var i,j,h;
+i=document.getElementById("f1");
+j=i.elements["name"].value;
+h=i.elements["pass"].value;
+
+if(j=="Rony" && h==9470571802)
+{
+window.open("https:/www.youtube.com");
+}
+
+else
+{
+document.getElementById("kk").innerHTML="fail";
+}
+
+
+}
+</script>
+
+<p id="kk" >
+</p>
+</body>
+</html>
